@@ -1,0 +1,10 @@
+name: CommandFramework
+version: 1.0.0
+main: mc.tsukimiya.commandframework.CommandFramework
+description: コマンドのフレームワーク
+author: deceitya
+website: https://github.com/TsukimiyaProject/CommandFramework
+api-version: 1.21
+load: STARTUP
+libraries:
+  - org.jetbrains.kotlin:kotlin:kotlin-stdlib:2.2.0
