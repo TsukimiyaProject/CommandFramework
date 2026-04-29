@@ -1,11 +1,11 @@
 plugins {
-    kotlin("jvm") version "2.2.0"
-    id("com.github.johnrengelman.shadow") version "8.1.1"
+    kotlin("jvm") version "2.2.21"
+    id("com.gradleup.shadow") version "9.3.0+"
     `maven-publish`
 }
 
 group = "mc.tsukimiya"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -16,11 +16,12 @@ repositories {
 }
 
 dependencies {
+    compileOnly(kotlin("stdlib"))
     compileOnly("io.papermc.paper:paper-api:1.21.8-R0.1-SNAPSHOT")
 }
 
 kotlin {
-    jvmToolchain(23)
+    jvmToolchain(21)
 }
 
 publishing {
